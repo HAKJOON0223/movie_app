@@ -1,0 +1,87 @@
+@import "./reset.css";
+body{
+    background-color: rgb(227, 232, 251);
+    width: 90%;
+
+}
+html{
+    display: flex;
+    justify-content: center;
+}
+.movies{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.movie{
+    width: 40%;
+    height: 200px;
+    background-color: white;
+    display: flex;
+    padding: 10px 20px;
+    margin: 30px 0px;
+    position: relative;
+    box-shadow: 0px 38px 71px -18px rgba(99,99,99,0.87);
+
+}
+
+.movie img{
+    width: 120px;
+    height: 200px;
+    position: relative;
+    top:-40px;
+    box-shadow: 0px 38px 71px -18px rgba(99,99,99,0.87);
+}
+
+.movie__data{
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.movie__title{
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.genres{
+    color: grey;
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+
+.movie__year{
+    color: grey;
+    padding-bottom: 5px;
+}
+.movie__summary{
+    color : grey;
+    height: 100%;
+    word-break: break-all;
+    white-space: normal;
+    overflow: auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
