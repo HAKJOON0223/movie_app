@@ -8,15 +8,19 @@
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.19.2",
     "gh-pages": "^3.0.0",
+    "npm": "^6.14.5",
     "peer": "^0.5.3",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "typescript": "^3.9.5"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "deploy":"gh-pages -d build",
+    "predeploy" : "npm run build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -33,5 +37,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://github.com/HAKJOON0223/movie_app"
+  "homepage": "https://hakjoon0223.github.io/movie_app",
+  "optionalDependencies": {
+    "fsevents": "^2.1.3"
+  }
 }
