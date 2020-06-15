@@ -1,4 +1,4 @@
-@import "./reset.css";
+@import "../css/reset.css";
 body{
     background-color: rgb(227, 232, 251);
     width: 90%;
@@ -17,6 +17,7 @@ html{
 }
 
 .movie{
+    text-decoration: none;
     width: 40%;
     height: 200px;
     background-color: white;
